@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhi Vignesh Samala | Full Stack Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Abhi Vignesh Samala, a Full Stack Developer specializing in the MERN Stack and Python Django. Currently working as an intern at Inxcel Technologies. Explore interactive terminal, projects, and custom mockups.">
+  <meta name="keywords" content="Abhi Vignesh Samala, Full Stack Developer, MERN Stack, Python Django Developer, Portfolio, Inxcel Technologies, ShareOcar, Foodora, Interactive Terminal">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Canvas Background for Holographic Particles -->
+  <canvas id="particle-canvas"></canvas>
+  
+  <!-- Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Header Nav -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo" id="nav-logo">
+        <span class="logo-accent">&lt;</span>AVS<span class="logo-accent">.DEV /&gt;</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link" id="link-about">About</a>
+        <a href="#stack" class="nav-link" id="link-stack">Stack</a>
+        <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+        <a href="#terminal-section" class="nav-link" id="link-terminal">Terminal</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-nav" id="btn-hire">Connect</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+      <div class="hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Full Stack Web Developer Intern @ Inxcel Technologies
+          </div>
+          <h1 class="hero-title" id="developer-name">
+            ABHI VIGNESH SAMALA
+          </h1>
+          <h2 class="hero-subtitle" id="developer-title">
+            <span class="typing-text">Full Stack Developer | MERN Stack | Python Django</span>
+          </h2>
+          <p class="hero-description">
+            Passionate Full Stack Developer specializing in MERN Stack and Python Django. Building responsive, scalable and user-friendly web applications.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary" id="cta-projects">
+              View Projects <i class="fa-solid fa-arrow-right icon-slide"></i>
+            </a>
+            <a href="#terminal-section" class="btn btn-secondary" id="cta-terminal">
+              Launch Terminal <i class="fa-solid fa-terminal"></i>
+            </a>
+          </div>
+          
+          <!-- Key Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">2+</span>
+              <span class="metric-label">Projects Completed</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">12+</span>
+              <span class="metric-label">Technologies</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">4+ Months</span>
+              <span class="metric-label">Internship Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar/Visual Content -->
+        <div class="hero-visual">
+          <div class="avatar-container">
+            <!-- New Avatar Image -->
+            <img src="assets/developer_avatar.png" alt="Abhi Vignesh Samala" class="hero-avatar-img">
+            
+            <!-- Floating Glassmorphic HUD Panels -->
+            <div class="hud-panel hud-status floating-element" style="--float-delay: 0s;">
+              <div class="hud-header">
+                <span class="hud-dot green"></span>
+                <span>Current Status</span>
+              </div>
+              <div class="hud-body">
+                <div class="hud-stat-row">
+                  <span>Role</span>
+                  <span class="hud-value neon-blue">Intern</span>
+                </div>
+                <div class="hud-stat-row">
+                  <span>Company</span>
+                  <span class="hud-value neon-purple">Inxcel Tech</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hud-panel hud-tech floating-element" style="--float-delay: 1.5s;">
+              <div class="hud-header">
+                <span class="hud-dot purple"></span>
+                <span>Core Stack</span>
+              </div>
+              <div class="hud-body tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+
+            <div class="hud-panel hud-git floating-element" style="--float-delay: 3s;">
+              <div class="hud-header">
+                <span class="hud-dot orange"></span>
+                <span>Git Dashboard</span>
+              </div>
+              <div class="hud-body">
+                <div class="hud-git-commit">
+                  <i class="fa-solid fa-code-fork neon-blue"></i>
+                  <span>branch: <strong class="neon-purple">main</strong></span>
+                </div>
+                <div class="hud-git-commit">
+                  <i class="fa-solid fa-code-commit neon-teal"></i>
+                  <span>Developing Foodora</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Detailed Section -->
+    <section class="about-me-section" id="about-details" style="position: relative; z-index: 1;">
+      <div class="section-container">
+        <div class="glass-panel" style="padding: 3rem; margin-top: -2rem;">
+          <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: var(--neon-blue);">About Me</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.05rem;">
+            I am a Full Stack Developer with hands-on experience in MERN Stack and Python Django development. Currently working as a Full Stack Web Developer Intern at Inxcel Technologies. Skilled in React.js, Node.js, Express.js, MongoDB, Python, Django, HTML, CSS, Bootstrap, JavaScript, SQL, SQLite, Git, GitHub, and REST APIs. I enjoy building real-world applications and continuously learning modern web technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack / Skills Section -->
+    <section class="stack-section" id="stack">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skillset</h2>
+          <p class="section-description">A solid array of modern technologies and tools utilized to build responsive and efficient web solutions.</p>
+        </div>
+        
+        <div class="stack-grid">
+          <!-- Card 1: Frontend -->
+          <div class="stack-card glass-panel" id="stack-frontend">
+            <div class="stack-icon-wrapper">
+              <i class="fa-brands fa-react stack-icon neon-blue"></i>
+            </div>
+            <h3 class="stack-title">Frontend Development</h3>
+            <p class="stack-text">Structuring and styling responsive, interactive user interfaces with modern frameworks and libraries.</p>
+            <div class="stack-badges">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+              <span>React.js</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend -->
+          <div class="stack-card glass-panel" id="stack-backend">
+            <div class="stack-icon-wrapper">
+              <i class="fa-brands fa-node-js stack-icon neon-green"></i>
+            </div>
+            <h3 class="stack-title">Backend Development</h3>
+            <p class="stack-text">Developing clean, logical backends, routing systems, and handling user sessions/authentication.</p>
+            <div class="stack-badges">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Python</span>
+              <span>Django</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Databases & Tools -->
+          <div class="stack-card glass-panel" id="stack-cloud">
+            <div class="stack-icon-wrapper">
+              <i class="fa-solid fa-database stack-icon neon-purple"></i>
+            </div>
+            <h3 class="stack-title">Databases &amp; Tools</h3>
+            <p class="stack-text">Managing structured or schema-less data stores, version control, and system API integrations.</p>
+            <div class="stack-badges">
+              <span>MongoDB</span>
+              <span>SQL</span>
+              <span>SQLite</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>REST APIs</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal IDE Section -->
+    <section class="terminal-section" id="terminal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Workspace</span>
+          <h2 class="section-title">Developer Console &amp; Terminal</h2>
+          <p class="section-description">Explore my developer profile directly through the terminal shell. Select files or type custom commands.</p>
+        </div>
+
+        <!-- IDE / Code Editor Container -->
+        <div class="ide-container glass-panel">
+          <!-- Title Bar -->
+          <div class="ide-titlebar">
+            <div class="ide-window-dots">
+              <span class="window-dot red"></span>
+              <span class="window-dot yellow"></span>
+              <span class="window-dot green"></span>
+            </div>
+            <div class="ide-title-text"><i class="fa-solid fa-terminal"></i> abhivignesh@dev-server:~</div>
+            <div class="ide-status-pill"><i class="fa-solid fa-code-fork"></i> main</div>
+          </div>
+
+          <div class="ide-workspace">
+            <!-- Sidebar -->
+            <aside class="ide-sidebar">
+              <div class="sidebar-title">EXPLORER</div>
+              <ul class="file-tree">
+                <li class="file-item active" data-file="about.json" id="file-about">
+                  <i class="fa-solid fa-file-code file-icon text-yellow"></i> about.json
+                </li>
+                <li class="file-item" data-file="skills.py" id="file-skills">
+                  <i class="fa-brands fa-python file-icon text-blue"></i> skills.py
+                </li>
+                <li class="file-item" data-file="experience.js" id="file-experience">
+                  <i class="fa-brands fa-js file-icon text-yellow"></i> experience.js
+                </li>
+                <li class="file-item" data-file="contact.md" id="file-contact">
+                  <i class="fa-solid fa-file-lines file-icon text-purple"></i> contact.md
+                </li>
+              </ul>
+            </aside>
+
+            <!-- Main Code Area -->
+            <div class="ide-main-area">
+              <!-- Code Tabs -->
+              <div class="ide-tabs" id="ide-tabs-container">
+                <div class="ide-tab active" data-tab="about.json">about.json</div>
+                <div class="ide-tab" data-tab="skills.py">skills.py</div>
+                <div class="ide-tab" data-tab="experience.js">experience.js</div>
+                <div class="ide-tab" data-tab="contact.md">contact.md</div>
+              </div>
+
+              <!-- Code Editor Window -->
+              <div class="editor-window">
+                <pre class="code-lines-nums" id="line-numbers">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre>
+                <div class="editor-content">
+                  <code id="editor-code-block" class="code-highlight"></code>
+                </div>
+              </div>
+
+              <!-- Interactive Terminal Console Area -->
+              <div class="terminal-console">
+                <div class="terminal-history" id="terminal-history">
+                  <div class="terminal-line text-muted">Welcome to AV-Dev Server Shell v2.4.</div>
+                  <div class="terminal-line text-muted">Type <span class="neon-teal">help</span> to list available commands.</div>
+                </div>
+                <div class="terminal-input-row">
+                  <span class="terminal-prompt"><span class="prompt-user-host">abhivignesh@dev-server:</span>~$</span>
+                  <input type="text" id="terminal-textbox" autocomplete="off" placeholder="type command here..." aria-label="Terminal command input">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">Real-world applications built during my training and self-guided projects.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+          <button class="filter-btn" data-filter="mern" id="filter-mern">MERN Stack</button>
+          <button class="filter-btn" data-filter="django" id="filter-django">Django</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid centered-projects">
+          <!-- Project 1 -->
+          <article class="project-card glass-panel" data-tech="mern" id="project-1">
+            <div class="project-image-container">
+              <div class="project-overlay-glow"></div>
+              <div class="project-tag-absolute">MERN Stack</div>
+              <!-- Code illustration inside project card -->
+              <div class="project-graphic">
+                <code class="mini-code">
+                  const rideSchema = new mongoose.Schema({<br>
+                  &nbsp;&nbsp;origin: String,<br>
+                  &nbsp;&nbsp;destination: String,<br>
+                  &nbsp;&nbsp;fare: Number<br>
+                  });
+                </code>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-card-title">ShareOcar</h3>
+              <p class="project-card-desc">A ride-sharing platform that helps users share travel rides and reduce transportation costs. Features include user authentication, ride creation, ride booking and responsive design.</p>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kalviumcommunity/S81_Abhi_SharOcar" target="_blank" class="project-link" aria-label="View Github repo for ShareOcar"><i class="fa-brands fa-github"></i> Source</a>
+                <a href="https://shareocar.netlify.app/" target="_blank" class="project-link" aria-label="View demo for ShareOcar"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-panel" data-tech="django" id="project-2">
+            <div class="project-image-container">
+              <div class="project-overlay-glow"></div>
+              <div class="project-tag-absolute">Python / Django</div>
+              <div class="project-graphic">
+                <code class="mini-code">
+                  class MenuItem(models.Model):<br>
+                  &nbsp;&nbsp;name = models.CharField(max_length=100)<br>
+                  &nbsp;&nbsp;price = models.DecimalField()<br>
+                  &nbsp;&nbsp;available = models.BooleanField()
+                </code>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-card-title">Foodora</h3>
+              <p class="project-card-desc">A full-stack food ordering web application with menu management, cart functionality, order placement and user authentication.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>Django</span>
+                <span>SQLite</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Abhi09-vigu/Foodora" target="_blank" class="project-link" aria-label="View Github repo for Foodora"><i class="fa-brands fa-github"></i> Source</a>
+                <a href="https://foodora-zoaq.onrender.com/" target="_blank" class="project-link" aria-label="View demo for Foodora"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Communication</span>
+          <h2 class="section-title">Initiate Contact</h2>
+          <p class="section-description">Feel free to reach out to discuss internship opportunities, project collaborations, or just to say hello.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Let's Work Together Section -->
+          <div class="work-together-container glass-panel">
+            <h3 class="info-title">Let's Work Together</h3>
+            <p class="work-together-desc">
+              I am actively seeking internship opportunities, freelance work, and full-stack development collaborations. Whether you need a responsive React interface, a robust backend with Python Django, or an integrated web system, I'm ready to contribute.
+            </p>
+            <p class="work-together-desc">
+              Let's connect to collaborate on building high-performance, user-friendly applications that solve real-world problems.
+            </p>
+          </div>
+
+          <!-- Professional Contact Card -->
+          <div class="contact-card-container glass-panel">
+            <h3 class="info-title">Connect with Me</h3>
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <span class="detail-label">Status:</span>
+                <span class="neon-teal">Ready for new roles</span>
+              </li>
+              <li class="contact-info-item">
+                <span class="detail-label">Location:</span>
+                <span>Jaggayyapeta, AP, India</span>
+              </li>
+            </ul>
+            
+            <div class="contact-buttons">
+              <a href="https://www.linkedin.com/in/abhi-vignesh-samala-459b77370/" target="_blank" class="btn btn-primary btn-contact-action" id="btn-linkedin">
+                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="https://github.com/Abhi09-vigu" target="_blank" class="btn btn-primary btn-contact-action" id="btn-github-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-accent">&lt;</span>AVS<span class="logo-accent">.DEV /&gt;</span>
+      </div>
+      <p class="footer-copyright">&copy; 2026 Abhi Vignesh Samala. All rights reserved. Crafted with premium styling.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Abhi09-vigu" target="_blank" class="social-icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abhi-vignesh-samala-459b77370/" target="_blank" class="social-icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:abhivignesh27@gmail.com" class="social-icon-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>
