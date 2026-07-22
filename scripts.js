@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 frontend = ["HTML", "CSS", "Bootstrap", "JavaScript", "React.js"]
 backend = ["Node.js", "Express.js", "Python", "Django"]
-database = ["MongoDB", "SQL", "SQLite"]
+database = ["MongoDB", "SQL", "SQLite", "PostgreSQL"]
 tools = ["Git", "GitHub", "REST APIs"]`,
 
     "experience.js": `const experience = {
@@ -295,7 +295,7 @@ If you would like to collaborate, discuss internship opportunities, or enquire a
           addTerminalLine('---------------------------------', 'text-muted');
           addTerminalLine('Frontend: HTML, CSS, Bootstrap, JavaScript, React.js');
           addTerminalLine('Backend: Node.js, Express.js, Python, Django');
-          addTerminalLine('Database: MongoDB, SQL, SQLite');
+          addTerminalLine('Database: MongoDB, SQL, SQLite, PostgreSQL');
           addTerminalLine('Tools: Git, GitHub, REST APIs');
           break;
 
