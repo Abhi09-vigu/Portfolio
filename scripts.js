@@ -133,20 +133,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     "skills.py": `# Technical Skills Profile
 
-frontend = ["HTML", "CSS", "Bootstrap", "JavaScript", "React.js"]
-backend = ["Node.js", "Express.js", "Python", "Django"]
-database = ["MongoDB", "SQL", "SQLite", "PostgreSQL"]
-tools = ["Git", "GitHub", "REST APIs"]`,
+languages = ["C++", "Python", "Java", "JavaScript"]
+frontend = ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Next.js", "Framer Motion"]
+backend = ["Node.js", "Express.js", "Django", "Flask"]
+databases = ["MongoDB", "MySQL", "PostgreSQL", "SQLite"]
+apis_auth = ["RESTful APIs", "JWT", "OAuth", "Authentication", "Authorization"]
+tools = ["Git", "GitHub", "Postman", "Bruno", "Visual Studio Code"]
+deployment = ["Hostinger", "Render", "Netlify", "Vercel"]
+operating_systems = ["Windows", "Linux"]`,
 
     "experience.js": `const experience = {
-  role: "Full Stack Web Developer Intern",
-  company: "Inxcel Technologies",
-  duration: "Feb 2026 - Present",
+  role: "Full-Stack Web Developer",
+  company: "Inxcel Technologies, Hyderabad",
+  duration: "Feb 2026 – Jul 2026 (6 Months Completed)",
+  status: "Completed",
   responsibilities: [
-    "Developed responsive web applications using HTML, CSS, Bootstrap, JavaScript, React.js, Python Django, SQL and SQLite.",
-    "Built REST APIs and integrated frontend with backend services.",
-    "Worked on authentication, CRUD operations and database-driven applications.",
-    "Participated in real-world application development and deployment."
+    "Developed Full-Stack web applications using Python, Django, Flask, HTML, CSS, Bootstrap, JavaScript, SQL, and SQLite.",
+    "Built responsive and mobile-friendly user interfaces with HTML, CSS, Bootstrap, and JavaScript, ensuring consistent user experience across desktop and mobile devices.",
+    "Implemented user authentication, session management, form validation, CRUD operations, and secure data handling.",
+    "Developed and integrated RESTful APIs to enable seamless communication between frontend and backend components.",
+    "Collaborated on project requirements, implemented functional specifications, and participated in debugging, testing, and feature development.",
+    "Used Git and GitHub for version control, code collaboration, code reviews, and deployment workflows."
   ]
 };
 
@@ -293,17 +300,22 @@ If you would like to collaborate, discuss internship opportunities, or enquire a
         case 'skills':
           addTerminalLine('Technical Ecosystem Profile:', 'neon-teal');
           addTerminalLine('---------------------------------', 'text-muted');
-          addTerminalLine('Frontend: HTML, CSS, Bootstrap, JavaScript, React.js');
-          addTerminalLine('Backend: Node.js, Express.js, Python, Django');
-          addTerminalLine('Database: MongoDB, SQL, SQLite, PostgreSQL');
-          addTerminalLine('Tools: Git, GitHub, REST APIs');
+          addTerminalLine('Languages: C++, Python, Java, JavaScript');
+          addTerminalLine('Frontend: React.js, HTML5, CSS3, Tailwind CSS, Bootstrap, Next.js, Framer Motion');
+          addTerminalLine('Backend: Node.js, Express.js, Django, Flask');
+          addTerminalLine('Databases: MongoDB, MySQL, PostgreSQL, SQLite');
+          addTerminalLine('APIs & Auth: RESTful APIs, JWT, OAuth, Authentication, Authorization');
+          addTerminalLine('Tools: Git, GitHub, Postman, Bruno, Visual Studio Code');
+          addTerminalLine('Deployment: Hostinger, Render, Netlify, Vercel');
+          addTerminalLine('Operating Systems: Windows, Linux');
           break;
 
         case 'projects':
           addTerminalLine('Active Projects:', 'neon-purple');
           addTerminalLine('---------------------------------', 'text-muted');
-          addTerminalLine('1. ShareOcar - MERN Stack Ride-Sharing Platform (https://shareocar.netlify.app/)');
-          addTerminalLine('2. Foodora - Python Django Food Ordering Web Application (https://foodora-zoaq.onrender.com/)');
+          addTerminalLine('1. Rangam Saradha Silks - Freelance Production E-Commerce (https://rangamsaradhasilks.com/)');
+          addTerminalLine('2. ShareOcar - MERN Stack Ride-Sharing Platform (https://shareocar.netlify.app/)');
+          addTerminalLine('3. Foodora - Python Django Food Ordering Web Application (https://foodora-zoaq.onrender.com/)');
           break;
 
         case 'contact':
@@ -331,7 +343,7 @@ If you would like to collaborate, discuss internship opportunities, or enquire a
   <span class="neon-blue" style="font-weight: bold;">abhivignesh@dev-server</span><br>
   <span>----------------------</span><br>
   <span>OS:</span> Debian GNU/Linux 12 (bookworm)<br>
-  <span>Uptime:</span> Internship Active @ Inxcel Tech<br>
+  <span>Uptime:</span> 6 Mos Completed @ Inxcel Tech (Open to Work)<br>
   <span>Shell:</span> Bash v2.4<br>
   <span>CPU:</span> MERN &amp; Django Stack Core<br>
   <span>RAM:</span> Buffered by Inxcel Tech
@@ -367,7 +379,8 @@ If you would like to collaborate, discuss internship opportunities, or enquire a
           card.style.display = 'flex';
           setTimeout(() => card.style.opacity = '1', 50);
         } else {
-          if (card.getAttribute('data-tech') === filterValue) {
+          const techTags = (card.getAttribute('data-tech') || '').split(' ');
+          if (techTags.includes(filterValue)) {
             card.style.display = 'flex';
             setTimeout(() => card.style.opacity = '1', 50);
           } else {
